@@ -1,11 +1,15 @@
 # - *- coding:utf- 8 - *-
 import requests
 import json
-from tqdm.auto import tqdm
+import tqdm
 import vk
 import re
 import random
 import sys
+import socks,socket
+socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5,'ss-03.s5.ynvv.cc',999)
+socks.setdefaultproxy(socks.PROXY_TYPE_HTTP,'ss-03.s5.ynvv.cc',999)
+socket.socket = socks.socksocket
 reload(sys)
 sys.setdefaultencoding('utf-8')
 token = '41e2cbef8cfe548c73bf85e58b8c1a6ee3552f632a534fb822a8652c139deb4d8913438fef48995b12701'
