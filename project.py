@@ -1,9 +1,13 @@
+# - *- coding:utf- 8 - *-
 import requests
 import json
 from tqdm.auto import tqdm
 import vk
 import re
 import random
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 token = '41e2cbef8cfe548c73bf85e58b8c1a6ee3552f632a534fb822a8652c139deb4d8913438fef48995b12701'
 TOKEN = '41e2cbef8cfe548c73bf85e58b8c1a6ee3552f632a534fb822a8652c139deb4d8913438fef48995b12701'
 version = '5.92'
